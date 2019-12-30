@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="38sp"
+            android:textColor="#f00000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/notificationBackground"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/notificationbackground"
+        android:layout_height="match_parent"
+      >
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_view"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Blink Effect with SSaurel "
+        android:textSize="22sp"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/txt"
+        />
+    <Button
+        android:text="Blink Effect !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_green_shape"
+        android:id="@+id/btn"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="NOTIFICATIONBOX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_green_shape"
+        android:id="@+id/notificationBox"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
